@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class NexusKtor_client_coreHttpClient, NexusKoin_coreKoin, NexusKotlinThrowable, NexusNexusLogger, NexusKoin_coreModule, NexusKtor_client_coreHttpClientEngineConfig, NexusKtor_client_coreHttpClientConfig<T>, NexusKtor_eventsEvents, NexusKtor_client_coreHttpReceivePipeline, NexusKtor_client_coreHttpRequestPipeline, NexusKtor_client_coreHttpResponsePipeline, NexusKtor_client_coreHttpSendPipeline, NexusKoin_coreScope, NexusKoin_coreParametersHolder, NexusKotlinLazyThreadSafetyMode, NexusKoin_coreLogger, NexusKoin_coreExtensionManager, NexusKoin_coreInstanceRegistry, NexusKoin_corePropertyRegistry, NexusKoin_coreScopeRegistry, NexusKotlinArray<T>, NexusKoin_coreKoinDefinition<R>, NexusKoin_coreInstanceFactory<T>, NexusKoin_coreSingleInstanceFactory<T>, NexusKoin_coreScopeDSL, NexusKtor_client_coreHttpRequestData, NexusKtor_client_coreHttpResponseData, NexusKotlinx_coroutines_coreCoroutineDispatcher, NexusKtor_client_coreProxyConfig, NexusKtor_utilsAttributeKey<T>, NexusKtor_eventsEventDefinition<T>, NexusKtor_utilsPipelinePhase, NexusKtor_utilsPipeline<TSubject, TContext>, NexusKtor_client_coreHttpReceivePipelinePhases, NexusKtor_client_coreHttpResponse, NexusKotlinUnit, NexusKtor_client_coreHttpRequestPipelinePhases, NexusKtor_client_coreHttpRequestBuilder, NexusKtor_client_coreHttpResponsePipelinePhases, NexusKtor_client_coreHttpResponseContainer, NexusKtor_client_coreHttpClientCall, NexusKtor_client_coreHttpSendPipelinePhases, NexusKoin_coreLockable, NexusKoin_coreParametersHolderCompanion, NexusKotlinEnumCompanion, NexusKotlinEnum<E>, NexusKoin_coreLevel, NexusKoin_coreScopeRegistryCompanion, NexusKoin_coreBeanDefinition<T>, NexusKoin_coreInstanceFactoryCompanion, NexusKoin_coreInstanceContext, NexusKotlinException, NexusKotlinRuntimeException, NexusKotlinIllegalStateException, NexusKtor_httpUrl, NexusKtor_httpHttpMethod, NexusKtor_httpOutgoingContent, NexusKtor_httpHttpStatusCode, NexusKtor_utilsGMTDate, NexusKtor_httpHttpProtocolVersion, NexusKotlinAbstractCoroutineContextElement, NexusKotlinx_coroutines_coreCoroutineDispatcherKey, NexusKtor_httpHeadersBuilder, NexusKtor_client_coreHttpRequestBuilderCompanion, NexusKtor_httpURLBuilder, NexusKtor_utilsTypeInfo, NexusKtor_client_coreHttpClientCallCompanion, NexusKoin_coreKind, NexusKoin_coreCallbacks<T>, NexusKtor_httpUrlCompanion, NexusKtor_httpURLProtocol, NexusKtor_httpHttpMethodCompanion, NexusKtor_httpContentType, NexusKotlinCancellationException, NexusKtor_httpHttpStatusCodeCompanion, NexusKtor_utilsGMTDateCompanion, NexusKtor_utilsWeekDay, NexusKtor_utilsMonth, NexusKtor_httpHttpProtocolVersionCompanion, NexusKotlinAbstractCoroutineContextKey<B, E>, NexusKtor_ioMemory, NexusKtor_ioChunkBuffer, NexusKotlinByteArray, NexusKtor_ioBuffer, NexusKtor_ioByteReadPacket, NexusKtor_utilsStringValuesBuilderImpl, NexusKtor_httpURLBuilderCompanion, NexusKtor_httpURLProtocolCompanion, NexusKtor_httpHeaderValueParam, NexusKtor_httpHeaderValueWithParametersCompanion, NexusKtor_httpHeaderValueWithParameters, NexusKtor_httpContentTypeCompanion, NexusKtor_utilsWeekDayCompanion, NexusKtor_utilsMonthCompanion, NexusKtor_ioMemoryCompanion, NexusKtor_ioBufferCompanion, NexusKtor_ioChunkBufferCompanion, NexusKotlinByteIterator, NexusKtor_ioInputCompanion, NexusKtor_ioInput, NexusKtor_ioByteReadPacketCompanion, NexusKotlinKTypeProjection, NexusKotlinKVariance, NexusKotlinKTypeProjectionCompanion;
+@class NexusKtor_client_coreHttpClient, NexusKoin_coreKoin, NexusKotlinThrowable, NexusNexusLogger, NexusKoin_coreModule, NexusKtor_client_coreHttpClientEngineConfig, NexusKtor_client_coreHttpClientConfig<T>, NexusKtor_eventsEvents, NexusKtor_client_coreHttpReceivePipeline, NexusKtor_client_coreHttpRequestPipeline, NexusKtor_client_coreHttpResponsePipeline, NexusKtor_client_coreHttpSendPipeline, NexusKoin_coreScope, NexusKoin_coreParametersHolder, NexusKotlinLazyThreadSafetyMode, NexusKoin_coreLogger, NexusKoin_coreExtensionManager, NexusKoin_coreInstanceRegistry, NexusKoin_corePropertyRegistry, NexusKoin_coreScopeRegistry, NexusKotlinArray<T>, NexusKoin_coreKoinDefinition<R>, NexusKoin_coreInstanceFactory<T>, NexusKoin_coreSingleInstanceFactory<T>, NexusKoin_coreScopeDSL, NexusKtor_client_coreProxyConfig, NexusKtor_client_coreHttpRequestData, NexusKtor_client_coreHttpResponseData, NexusKotlinx_coroutines_coreCoroutineDispatcher, NexusKtor_utilsAttributeKey<T>, NexusKtor_eventsEventDefinition<T>, NexusKtor_utilsPipelinePhase, NexusKtor_utilsPipeline<TSubject, TContext>, NexusKtor_client_coreHttpReceivePipelinePhases, NexusKtor_client_coreHttpResponse, NexusKotlinUnit, NexusKtor_client_coreHttpRequestPipelinePhases, NexusKtor_client_coreHttpRequestBuilder, NexusKtor_client_coreHttpResponsePipelinePhases, NexusKtor_client_coreHttpResponseContainer, NexusKtor_client_coreHttpClientCall, NexusKtor_client_coreHttpSendPipelinePhases, NexusKoin_coreLockable, NexusStately_concurrencyThreadLocalRef<T>, NexusKotlinEnumCompanion, NexusKotlinEnum<E>, NexusKoin_coreLevel, NexusKoin_coreScopeRegistryCompanion, NexusKoin_coreBeanDefinition<T>, NexusKoin_coreInstanceFactoryCompanion, NexusKoin_coreInstanceContext, NexusKtor_httpUrl, NexusKotlinException, NexusKotlinRuntimeException, NexusKotlinIllegalStateException, NexusKtor_httpHttpMethod, NexusKtor_httpOutgoingContent, NexusKtor_httpHttpStatusCode, NexusKtor_utilsGMTDate, NexusKtor_httpHttpProtocolVersion, NexusKotlinAbstractCoroutineContextElement, NexusKotlinx_coroutines_coreCoroutineDispatcherKey, NexusKtor_httpHeadersBuilder, NexusKtor_client_coreHttpRequestBuilderCompanion, NexusKtor_httpURLBuilder, NexusKtor_utilsTypeInfo, NexusKtor_client_coreHttpClientCallCompanion, NexusKoin_coreKind, NexusKoin_coreCallbacks<T>, NexusKtor_httpUrlCompanion, NexusKtor_httpURLProtocol, NexusKtor_httpHttpMethodCompanion, NexusKtor_httpContentType, NexusKotlinCancellationException, NexusKtor_httpHttpStatusCodeCompanion, NexusKtor_utilsGMTDateCompanion, NexusKtor_utilsWeekDay, NexusKtor_utilsMonth, NexusKtor_httpHttpProtocolVersionCompanion, NexusKotlinAbstractCoroutineContextKey<B, E>, NexusKtor_ioMemory, NexusKtor_ioChunkBuffer, NexusKtor_ioBuffer, NexusKotlinByteArray, NexusKtor_ioByteReadPacket, NexusKtor_utilsStringValuesBuilderImpl, NexusKtor_httpURLBuilderCompanion, NexusKtor_httpURLProtocolCompanion, NexusKtor_httpHeaderValueParam, NexusKtor_httpHeaderValueWithParametersCompanion, NexusKtor_httpHeaderValueWithParameters, NexusKtor_httpContentTypeCompanion, NexusKtor_utilsWeekDayCompanion, NexusKtor_utilsMonthCompanion, NexusKtor_ioMemoryCompanion, NexusKtor_ioBufferCompanion, NexusKtor_ioChunkBufferCompanion, NexusKotlinByteIterator, NexusKtor_ioInputCompanion, NexusKtor_ioInput, NexusKtor_ioByteReadPacketCompanion, NexusKotlinKTypeProjection, NexusKotlinKVariance, NexusKotlinKTypeProjectionCompanion;
 
 @protocol NexusNexusClientContract, NexusKotlinx_coroutines_coreCoroutineScope, NexusKoin_coreKoinComponent, NexusNexusTimeoutSettingsContract, NexusNexusClientSettings, NexusNexusLoggerContract, NexusKtor_client_coreHttpClientEngine, NexusKotlinCoroutineContext, NexusKtor_ioCloseable, NexusKtor_client_coreHttpClientEngineCapability, NexusKtor_utilsAttributes, NexusKoin_coreKoinScopeComponent, NexusKoin_coreQualifier, NexusKotlinKClass, NexusKotlinLazy, NexusKtor_client_coreHttpClientPlugin, NexusKotlinCoroutineContextElement, NexusKotlinCoroutineContextKey, NexusKotlinx_coroutines_coreDisposableHandle, NexusKotlinSuspendFunction2, NexusKoin_coreScopeCallback, NexusKotlinKDeclarationContainer, NexusKotlinKAnnotatedElement, NexusKotlinKClassifier, NexusKotlinComparable, NexusKoin_coreKoinExtension, NexusKotlinIterator, NexusKtor_httpHeaders, NexusKotlinx_coroutines_coreJob, NexusKotlinContinuation, NexusKotlinContinuationInterceptor, NexusKotlinx_coroutines_coreRunnable, NexusKotlinFunction, NexusKtor_httpHttpMessage, NexusKtor_ioByteReadChannel, NexusKtor_httpHttpMessageBuilder, NexusKtor_client_coreHttpRequest, NexusKtor_httpParameters, NexusKotlinMapEntry, NexusKtor_utilsStringValues, NexusKotlinx_coroutines_coreChildHandle, NexusKotlinx_coroutines_coreChildJob, NexusKotlinSequence, NexusKotlinx_coroutines_coreSelectClause0, NexusKtor_ioReadSession, NexusKotlinSuspendFunction1, NexusKotlinAppendable, NexusKtor_utilsStringValuesBuilder, NexusKtor_httpParametersBuilder, NexusKotlinKType, NexusKotlinx_coroutines_coreParentJob, NexusKotlinx_coroutines_coreSelectInstance, NexusKotlinx_coroutines_coreSelectClause, NexusKtor_ioObjectPool;
 
@@ -226,16 +226,23 @@ __attribute__((swift_name("KoinCommonKt")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KtorIosKt")))
-@interface NexusKtorIosKt : NexusBase
-@property (class, readonly) id<NexusKtor_client_coreHttpClientEngine> ktorEngine __attribute__((swift_name("ktorEngine")));
-@end
-
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KoinIosKt")))
 @interface NexusKoinIosKt : NexusBase
 + (void)doInitKoin __attribute__((swift_name("doInitKoin()")));
 @property (class, readonly) NexusKoin_coreModule *platformModule __attribute__((swift_name("platformModule")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KtorCommonKt")))
+@interface NexusKtorCommonKt : NexusBase
++ (NexusKtor_client_coreHttpClient *)provideHttpClientConfig:(NexusKtor_client_coreHttpClientConfig<NexusKtor_client_coreHttpClientEngineConfig *> *)config __attribute__((swift_name("provideHttpClient(config:)")));
++ (NexusKtor_client_coreHttpClientConfig<id> *)provideHttpClientConfigSettings:(id<NexusNexusClientSettings>)settings __attribute__((swift_name("provideHttpClientConfig(settings:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KtorIosKt")))
+@interface NexusKtorIosKt : NexusBase
+@property (class, readonly) id<NexusKtor_client_coreHttpClientEngine> ktorEngine __attribute__((swift_name("ktorEngine")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -245,13 +252,6 @@ __attribute__((swift_name("NexusLoggerKt")))
 + (void)loggerErrorMessage:(NSString *)message throwable:(NexusKotlinThrowable * _Nullable)throwable __attribute__((swift_name("loggerError(message:throwable:)")));
 + (void)loggerVerboseMessage:(NSString *)message __attribute__((swift_name("loggerVerbose(message:)")));
 + (void)loggerWarningMessage:(NSString *)message throwable:(NexusKotlinThrowable * _Nullable)throwable __attribute__((swift_name("loggerWarning(message:throwable:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KtorCommonKt")))
-@interface NexusKtorCommonKt : NexusBase
-+ (NexusKtor_client_coreHttpClient *)provideHttpClientConfig:(NexusKtor_client_coreHttpClientConfig<NexusKtor_client_coreHttpClientEngineConfig *> *)config __attribute__((swift_name("provideHttpClient(config:)")));
-+ (NexusKtor_client_coreHttpClientConfig<id> *)provideHttpClientConfigSettings:(id<NexusNexusClientSettings>)settings __attribute__((swift_name("provideHttpClientConfig(settings:)")));
 @end
 
 __attribute__((swift_name("Kotlinx_coroutines_coreCoroutineScope")))
@@ -299,20 +299,20 @@ __attribute__((swift_name("Koin_coreKoin")))
 - (void)declareInstance:(id _Nullable)instance qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier secondaryTypes:(NSArray<id<NexusKotlinKClass>> *)secondaryTypes allowOverride:(BOOL)allowOverride __attribute__((swift_name("declare(instance:qualifier:secondaryTypes:allowOverride:)")));
 - (void)deletePropertyKey:(NSString *)key __attribute__((swift_name("deleteProperty(key:)")));
 - (void)deleteScopeScopeId:(NSString *)scopeId __attribute__((swift_name("deleteScope(scopeId:)")));
-- (id _Nullable)getClazz:(id<NexusKotlinKClass>)clazz qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(clazz:qualifier:parameters:)")));
 - (id)getQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(qualifier:parameters:)")));
+- (id _Nullable)getClazz:(id<NexusKotlinKClass>)clazz qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(clazz:qualifier:parameters:)")));
 - (NSArray<id> *)getAll __attribute__((swift_name("getAll()")));
 - (NexusKoin_coreScope *)getOrCreateScopeScopeId:(NSString *)scopeId __attribute__((swift_name("getOrCreateScope(scopeId:)")));
 - (NexusKoin_coreScope *)getOrCreateScopeScopeId:(NSString *)scopeId qualifier:(id<NexusKoin_coreQualifier>)qualifier source:(id _Nullable)source __attribute__((swift_name("getOrCreateScope(scopeId:qualifier:source:)")));
-- (id _Nullable)getOrNullClazz:(id<NexusKotlinKClass>)clazz qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(clazz:qualifier:parameters:)")));
 - (id _Nullable)getOrNullQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(qualifier:parameters:)")));
+- (id _Nullable)getOrNullClazz:(id<NexusKotlinKClass>)clazz qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(clazz:qualifier:parameters:)")));
 - (id _Nullable)getPropertyKey:(NSString *)key __attribute__((swift_name("getProperty(key:)")));
 - (id)getPropertyKey:(NSString *)key defaultValue:(id)defaultValue __attribute__((swift_name("getProperty(key:defaultValue:)")));
 - (NexusKoin_coreScope *)getScopeScopeId:(NSString *)scopeId __attribute__((swift_name("getScope(scopeId:)")));
 - (NexusKoin_coreScope * _Nullable)getScopeOrNullScopeId:(NSString *)scopeId __attribute__((swift_name("getScopeOrNull(scopeId:)")));
 - (id<NexusKotlinLazy>)injectQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier mode:(NexusKotlinLazyThreadSafetyMode *)mode parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("inject(qualifier:mode:parameters:)")));
 - (id<NexusKotlinLazy>)injectOrNullQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier mode:(NexusKotlinLazyThreadSafetyMode *)mode parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("injectOrNull(qualifier:mode:parameters:)")));
-- (void)loadModulesModules:(NSArray<NexusKoin_coreModule *> *)modules allowOverride:(BOOL)allowOverride __attribute__((swift_name("loadModules(modules:allowOverride:)")));
+- (void)loadModulesModules:(NSArray<NexusKoin_coreModule *> *)modules allowOverride:(BOOL)allowOverride createEagerInstances:(BOOL)createEagerInstances __attribute__((swift_name("loadModules(modules:allowOverride:createEagerInstances:)")));
 - (void)setPropertyKey:(NSString *)key value:(id)value __attribute__((swift_name("setProperty(key:value:)")));
 - (void)setupLoggerLogger:(NexusKoin_coreLogger *)logger __attribute__((swift_name("setupLogger(logger:)")));
 - (void)unloadModulesModules:(NSArray<NexusKoin_coreModule *> *)modules __attribute__((swift_name("unloadModules(modules:)")));
@@ -325,10 +325,10 @@ __attribute__((swift_name("Koin_coreKoin")))
 
 __attribute__((swift_name("KotlinThrowable")))
 @interface NexusKotlinThrowable : NexusBase
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 
 /**
@@ -351,35 +351,20 @@ __attribute__((swift_name("Koin_coreModule")))
 - (NexusKoin_coreKoinDefinition<id> *)factoryQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier definition:(id _Nullable (^)(NexusKoin_coreScope *, NexusKoin_coreParametersHolder *))definition __attribute__((swift_name("factory(qualifier:definition:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (void)includesModule:(NexusKotlinArray<NexusKoin_coreModule *> *)module __attribute__((swift_name("includes(module:)")));
-- (void)includesModule_:(NSArray<NexusKoin_coreModule *> *)module __attribute__((swift_name("includes(module_:)")));
+- (void)includesModule_:(id)module __attribute__((swift_name("includes(module_:)")));
 - (void)indexPrimaryTypeInstanceFactory:(NexusKoin_coreInstanceFactory<id> *)instanceFactory __attribute__((swift_name("indexPrimaryType(instanceFactory:)")));
 - (void)indexSecondaryTypesInstanceFactory:(NexusKoin_coreInstanceFactory<id> *)instanceFactory __attribute__((swift_name("indexSecondaryTypes(instanceFactory:)")));
 - (NSArray<NexusKoin_coreModule *> *)plusModules:(NSArray<NexusKoin_coreModule *> *)modules __attribute__((swift_name("plus(modules:)")));
 - (NSArray<NexusKoin_coreModule *> *)plusModule:(NexusKoin_coreModule *)module __attribute__((swift_name("plus(module:)")));
 - (void)prepareForCreationAtStartInstanceFactory:(NexusKoin_coreSingleInstanceFactory<id> *)instanceFactory __attribute__((swift_name("prepareForCreationAtStart(instanceFactory:)")));
-- (void)scopeQualifier:(id<NexusKoin_coreQualifier>)qualifier scopeSet:(void (^)(NexusKoin_coreScopeDSL *))scopeSet __attribute__((swift_name("scope(qualifier:scopeSet:)")));
 - (void)scopeScopeSet:(void (^)(NexusKoin_coreScopeDSL *))scopeSet __attribute__((swift_name("scope(scopeSet:)")));
+- (void)scopeQualifier:(id<NexusKoin_coreQualifier>)qualifier scopeSet:(void (^)(NexusKoin_coreScopeDSL *))scopeSet __attribute__((swift_name("scope(qualifier:scopeSet:)")));
 - (NexusKoin_coreKoinDefinition<id> *)singleQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier createdAtStart:(BOOL)createdAtStart definition:(id _Nullable (^)(NexusKoin_coreScope *, NexusKoin_coreParametersHolder *))definition __attribute__((swift_name("single(qualifier:createdAtStart:definition:)")));
 @property (readonly) NexusMutableSet<NexusKoin_coreSingleInstanceFactory<id> *> *eagerInstances __attribute__((swift_name("eagerInstances")));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
 @property (readonly) NSMutableArray<NexusKoin_coreModule *> *includedModules __attribute__((swift_name("includedModules")));
 @property (readonly) BOOL isLoaded __attribute__((swift_name("isLoaded")));
 @property (readonly) NexusMutableDictionary<NSString *, NexusKoin_coreInstanceFactory<id> *> *mappings __attribute__((swift_name("mappings")));
-@end
-
-__attribute__((swift_name("Ktor_client_coreHttpClientEngine")))
-@protocol NexusKtor_client_coreHttpClientEngine <NexusKotlinx_coroutines_coreCoroutineScope, NexusKtor_ioCloseable>
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)executeData:(NexusKtor_client_coreHttpRequestData *)data completionHandler:(void (^)(NexusKtor_client_coreHttpResponseData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("execute(data:completionHandler:)")));
-- (void)installClient:(NexusKtor_client_coreHttpClient *)client __attribute__((swift_name("install(client:)")));
-@property (readonly) NexusKtor_client_coreHttpClientEngineConfig *config __attribute__((swift_name("config")));
-@property (readonly) NexusKotlinx_coroutines_coreCoroutineDispatcher *dispatcher __attribute__((swift_name("dispatcher")));
-@property (readonly) NSSet<id<NexusKtor_client_coreHttpClientEngineCapability>> *supportedCapabilities __attribute__((swift_name("supportedCapabilities")));
 @end
 
 __attribute__((swift_name("Ktor_client_coreHttpClientEngineConfig")))
@@ -406,6 +391,21 @@ __attribute__((swift_name("Ktor_client_coreHttpClientConfig")))
 @property BOOL expectSuccess __attribute__((swift_name("expectSuccess")));
 @property BOOL followRedirects __attribute__((swift_name("followRedirects")));
 @property BOOL useDefaultTransformers __attribute__((swift_name("useDefaultTransformers")));
+@end
+
+__attribute__((swift_name("Ktor_client_coreHttpClientEngine")))
+@protocol NexusKtor_client_coreHttpClientEngine <NexusKotlinx_coroutines_coreCoroutineScope, NexusKtor_ioCloseable>
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)executeData:(NexusKtor_client_coreHttpRequestData *)data completionHandler:(void (^)(NexusKtor_client_coreHttpResponseData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("execute(data:completionHandler:)")));
+- (void)installClient:(NexusKtor_client_coreHttpClient *)client __attribute__((swift_name("install(client:)")));
+@property (readonly) NexusKtor_client_coreHttpClientEngineConfig *config __attribute__((swift_name("config")));
+@property (readonly) NexusKotlinx_coroutines_coreCoroutineDispatcher *dispatcher __attribute__((swift_name("dispatcher")));
+@property (readonly) NSSet<id<NexusKtor_client_coreHttpClientEngineCapability>> *supportedCapabilities __attribute__((swift_name("supportedCapabilities")));
 @end
 
 
@@ -453,8 +453,8 @@ __attribute__((swift_name("Ktor_eventsEvents")))
 
 __attribute__((swift_name("Ktor_utilsPipeline")))
 @interface NexusKtor_utilsPipeline<TSubject, TContext> : NexusBase
-- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithPhases:(NexusKotlinArray<NexusKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer));
 - (void)addPhasePhase:(NexusKtor_utilsPipelinePhase *)phase __attribute__((swift_name("addPhase(phase:)")));
 - (void)afterIntercepted __attribute__((swift_name("afterIntercepted()")));
 
@@ -480,8 +480,8 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_client_coreHttpReceivePipeline")))
 @interface NexusKtor_client_coreHttpReceivePipeline : NexusKtor_utilsPipeline<NexusKtor_client_coreHttpResponse *, NexusKotlinUnit *>
 - (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithPhases:(NexusKotlinArray<NexusKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly, getter=companion) NexusKtor_client_coreHttpReceivePipelinePhases *companion __attribute__((swift_name("companion")));
 @property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
 @end
@@ -490,8 +490,8 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_client_coreHttpRequestPipeline")))
 @interface NexusKtor_client_coreHttpRequestPipeline : NexusKtor_utilsPipeline<id, NexusKtor_client_coreHttpRequestBuilder *>
 - (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithPhases:(NexusKotlinArray<NexusKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly, getter=companion) NexusKtor_client_coreHttpRequestPipelinePhases *companion __attribute__((swift_name("companion")));
 @property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
 @end
@@ -500,8 +500,8 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_client_coreHttpResponsePipeline")))
 @interface NexusKtor_client_coreHttpResponsePipeline : NexusKtor_utilsPipeline<NexusKtor_client_coreHttpResponseContainer *, NexusKtor_client_coreHttpClientCall *>
 - (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithPhases:(NexusKotlinArray<NexusKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly, getter=companion) NexusKtor_client_coreHttpResponsePipelinePhases *companion __attribute__((swift_name("companion")));
 @property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
 @end
@@ -510,8 +510,8 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_client_coreHttpSendPipeline")))
 @interface NexusKtor_client_coreHttpSendPipeline : NexusKtor_utilsPipeline<id, NexusKtor_client_coreHttpRequestBuilder *>
 - (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithPhases:(NexusKotlinArray<NexusKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhase:(NexusKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<NexusKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly, getter=companion) NexusKtor_client_coreHttpSendPipelinePhases *companion __attribute__((swift_name("companion")));
 @property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
 @end
@@ -529,22 +529,19 @@ __attribute__((swift_name("Koin_coreScope")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 - (void)close __attribute__((swift_name("close()")));
-- (NexusKoin_coreScope *)doCopyScopeQualifier:(id<NexusKoin_coreQualifier>)scopeQualifier id:(NSString *)id isRoot:(BOOL)isRoot _koin:(NexusKoin_coreKoin *)_koin __attribute__((swift_name("doCopy(scopeQualifier:id:isRoot:_koin:)")));
 - (void)declareInstance:(id _Nullable)instance qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier secondaryTypes:(NSArray<id<NexusKotlinKClass>> *)secondaryTypes allowOverride:(BOOL)allowOverride __attribute__((swift_name("declare(instance:qualifier:secondaryTypes:allowOverride:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (id _Nullable)getClazz:(id<NexusKotlinKClass>)clazz qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(clazz:qualifier:parameters:)")));
 - (id)getQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(qualifier:parameters:)")));
+- (id _Nullable)getClazz:(id<NexusKotlinKClass>)clazz qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(clazz:qualifier:parameters:)")));
 - (NSArray<id> *)getAll __attribute__((swift_name("getAll()")));
 - (NSArray<id> *)getAllClazz:(id<NexusKotlinKClass>)clazz __attribute__((swift_name("getAll(clazz:)")));
 - (NexusKoin_coreKoin *)getKoin __attribute__((swift_name("getKoin()")));
-- (id _Nullable)getOrNullClazz:(id<NexusKotlinKClass>)clazz qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(clazz:qualifier:parameters:)")));
 - (id _Nullable)getOrNullQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(qualifier:parameters:)")));
+- (id _Nullable)getOrNullClazz:(id<NexusKotlinKClass>)clazz qualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(clazz:qualifier:parameters:)")));
 - (id)getPropertyKey:(NSString *)key __attribute__((swift_name("getProperty(key:)")));
 - (id)getPropertyKey:(NSString *)key defaultValue:(id)defaultValue __attribute__((swift_name("getProperty(key:defaultValue:)")));
 - (id _Nullable)getPropertyOrNullKey:(NSString *)key __attribute__((swift_name("getPropertyOrNull(key:)")));
 - (NexusKoin_coreScope *)getScopeScopeID:(NSString *)scopeID __attribute__((swift_name("getScope(scopeID:)")));
-- (id _Nullable)getSource __attribute__((swift_name("getSource()"))) __attribute__((deprecated("No need to use getSource(). You can an use get() directly.")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (id _Nullable)getSource __attribute__((swift_name("getSource()")));
 - (id<NexusKotlinLazy>)injectQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier mode:(NexusKotlinLazyThreadSafetyMode *)mode parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("inject(qualifier:mode:parameters:)")));
 - (id<NexusKotlinLazy>)injectOrNullQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier mode:(NexusKotlinLazyThreadSafetyMode *)mode parameters:(NexusKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("injectOrNull(qualifier:mode:parameters:)")));
 - (BOOL)isNotClosed __attribute__((swift_name("isNotClosed()")));
@@ -552,7 +549,7 @@ __attribute__((swift_name("Koin_coreScope")))
 - (void)registerCallbackCallback:(id<NexusKoin_coreScopeCallback>)callback __attribute__((swift_name("registerCallback(callback:)")));
 - (NSString *)description __attribute__((swift_name("description()")));
 - (void)unlinkScopes:(NexusKotlinArray<NexusKoin_coreScope *> *)scopes __attribute__((swift_name("unlink(scopes:)")));
-@property (readonly) NSMutableArray<NexusKoin_coreParametersHolder *> *_parameterStack __attribute__((swift_name("_parameterStack")));
+@property (readonly) NexusStately_concurrencyThreadLocalRef<NSMutableArray<NexusKoin_coreParametersHolder *> *> *_parameterStackLocal __attribute__((swift_name("_parameterStackLocal")));
 @property id _Nullable _source __attribute__((swift_name("_source")));
 @property (readonly) BOOL closed __attribute__((swift_name("closed")));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
@@ -609,8 +606,7 @@ __attribute__((swift_name("KotlinKClass")))
 
 __attribute__((swift_name("Koin_coreParametersHolder")))
 @interface NexusKoin_coreParametersHolder : NexusBase
-- (instancetype)initWith_values:(NSMutableArray<id> *)_values __attribute__((swift_name("init(_values:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) NexusKoin_coreParametersHolderCompanion *companion __attribute__((swift_name("companion")));
+- (instancetype)initWith_values:(NSMutableArray<id> *)_values useIndexedValues:(NexusBoolean * _Nullable)useIndexedValues __attribute__((swift_name("init(_values:useIndexedValues:)"))) __attribute__((objc_designated_initializer));
 - (NexusKoin_coreParametersHolder *)addValue:(id)value __attribute__((swift_name("add(value:)")));
 - (id _Nullable)component1 __attribute__((swift_name("component1()")));
 - (id _Nullable)component2 __attribute__((swift_name("component2()")));
@@ -628,6 +624,8 @@ __attribute__((swift_name("Koin_coreParametersHolder")))
 - (void)setI:(int32_t)i t:(id _Nullable)t __attribute__((swift_name("set(i:t:)")));
 - (int32_t)size __attribute__((swift_name("size()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@property int32_t index __attribute__((swift_name("index")));
+@property (readonly) NexusBoolean * _Nullable useIndexedValues __attribute__((swift_name("useIndexedValues")));
 @property (readonly) NSArray<id> *values __attribute__((swift_name("values")));
 @end
 
@@ -784,13 +782,29 @@ __attribute__((swift_name("Koin_coreScopeDSL")))
 @property (readonly) id<NexusKoin_coreQualifier> scopeQualifier __attribute__((swift_name("scopeQualifier")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreProxyConfig")))
+@interface NexusKtor_client_coreProxyConfig : NexusBase
+- (instancetype)initWithUrl:(NexusKtor_httpUrl *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NexusKtor_httpUrl *url __attribute__((swift_name("url")));
+@end
+
+__attribute__((swift_name("Ktor_client_coreHttpClientPlugin")))
+@protocol NexusKtor_client_coreHttpClientPlugin
+@required
+- (void)installPlugin:(id)plugin scope:(NexusKtor_client_coreHttpClient *)scope __attribute__((swift_name("install(plugin:scope:)")));
+- (id)prepareBlock:(void (^)(id))block __attribute__((swift_name("prepare(block:)")));
+@property (readonly) NexusKtor_utilsAttributeKey<id> *key __attribute__((swift_name("key")));
+@end
+
 __attribute__((swift_name("KotlinException")))
 @interface NexusKotlinException : NexusKotlinThrowable
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 @end
 
 __attribute__((swift_name("KotlinRuntimeException")))
@@ -798,8 +812,8 @@ __attribute__((swift_name("KotlinRuntimeException")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 @end
 
 __attribute__((swift_name("KotlinIllegalStateException")))
@@ -807,8 +821,8 @@ __attribute__((swift_name("KotlinIllegalStateException")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 @end
 
 
@@ -821,8 +835,8 @@ __attribute__((swift_name("KotlinCancellationException")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -901,22 +915,6 @@ __attribute__((swift_name("Kotlinx_coroutines_coreCoroutineDispatcher")))
 - (NexusKotlinx_coroutines_coreCoroutineDispatcher *)plusOther:(NexusKotlinx_coroutines_coreCoroutineDispatcher *)other __attribute__((swift_name("plus(other:)"))) __attribute__((unavailable("Operator '+' on two CoroutineDispatcher objects is meaningless. CoroutineDispatcher is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The dispatcher to the right of `+` just replaces the dispatcher to the left.")));
 - (void)releaseInterceptedContinuationContinuation:(id<NexusKotlinContinuation>)continuation __attribute__((swift_name("releaseInterceptedContinuation(continuation:)")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Ktor_client_coreProxyConfig")))
-@interface NexusKtor_client_coreProxyConfig : NexusBase
-- (instancetype)initWithUrl:(NexusKtor_httpUrl *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NexusKtor_httpUrl *url __attribute__((swift_name("url")));
-@end
-
-__attribute__((swift_name("Ktor_client_coreHttpClientPlugin")))
-@protocol NexusKtor_client_coreHttpClientPlugin
-@required
-- (void)installPlugin:(id)plugin scope:(NexusKtor_client_coreHttpClient *)scope __attribute__((swift_name("install(plugin:scope:)")));
-- (id)prepareBlock:(void (^)(id))block __attribute__((swift_name("prepare(block:)")));
-@property (readonly) NexusKtor_utilsAttributeKey<id> *key __attribute__((swift_name("key")));
 @end
 
 __attribute__((swift_name("KotlinCoroutineContextKey")))
@@ -1081,8 +1079,8 @@ __attribute__((swift_name("Ktor_client_coreHttpResponseContainer")))
 
 __attribute__((swift_name("Ktor_client_coreHttpClientCall")))
 @interface NexusKtor_client_coreHttpClientCall : NexusBase <NexusKotlinx_coroutines_coreCoroutineScope>
-- (instancetype)initWithClient:(NexusKtor_client_coreHttpClient *)client requestData:(NexusKtor_client_coreHttpRequestData *)requestData responseData:(NexusKtor_client_coreHttpResponseData *)responseData __attribute__((swift_name("init(client:requestData:responseData:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithClient:(NexusKtor_client_coreHttpClient *)client __attribute__((swift_name("init(client:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithClient:(NexusKtor_client_coreHttpClient *)client requestData:(NexusKtor_client_coreHttpRequestData *)requestData responseData:(NexusKtor_client_coreHttpResponseData *)responseData __attribute__((swift_name("init(client:requestData:responseData:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) NexusKtor_client_coreHttpClientCallCompanion *companion __attribute__((swift_name("companion")));
 
 /**
@@ -1136,14 +1134,13 @@ __attribute__((swift_name("Koin_coreScopeCallback")))
 - (void)onScopeCloseScope:(NexusKoin_coreScope *)scope __attribute__((swift_name("onScopeClose(scope:)")));
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Koin_coreParametersHolder.Companion")))
-@interface NexusKoin_coreParametersHolderCompanion : NexusBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) NexusKoin_coreParametersHolderCompanion *shared __attribute__((swift_name("shared")));
-@property (readonly) int32_t MAX_PARAMS __attribute__((swift_name("MAX_PARAMS")));
+__attribute__((swift_name("Stately_concurrencyThreadLocalRef")))
+@interface NexusStately_concurrencyThreadLocalRef<T> : NexusBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (T _Nullable)get __attribute__((swift_name("get()")));
+- (void)remove __attribute__((swift_name("remove()")));
+- (void)setValue:(T _Nullable)value __attribute__((swift_name("set(value:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1167,6 +1164,7 @@ __attribute__((swift_name("Koin_coreLevel")))
 @property (class, readonly) NexusKoin_coreLevel *error __attribute__((swift_name("error")));
 @property (class, readonly) NexusKoin_coreLevel *none __attribute__((swift_name("none")));
 + (NexusKotlinArray<NexusKoin_coreLevel *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<NexusKoin_coreLevel *> *entries __attribute__((swift_name("entries")));
 @end
 
 __attribute__((swift_name("Koin_coreKoinExtension")))
@@ -1303,8 +1301,8 @@ __attribute__((swift_name("Kotlinx_coroutines_coreJob")))
 - (id<NexusKotlinx_coroutines_coreChildHandle>)attachChildChild:(id<NexusKotlinx_coroutines_coreChildJob>)child __attribute__((swift_name("attachChild(child:)")));
 - (void)cancelCause:(NexusKotlinCancellationException * _Nullable)cause __attribute__((swift_name("cancel(cause:)")));
 - (NexusKotlinCancellationException *)getCancellationException __attribute__((swift_name("getCancellationException()")));
-- (id<NexusKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionOnCancelling:(BOOL)onCancelling invokeImmediately:(BOOL)invokeImmediately handler:(void (^)(NexusKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(onCancelling:invokeImmediately:handler:)")));
 - (id<NexusKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionHandler:(void (^)(NexusKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(handler:)")));
+- (id<NexusKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionOnCancelling:(BOOL)onCancelling invokeImmediately:(BOOL)invokeImmediately handler:(void (^)(NexusKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(onCancelling:invokeImmediately:handler:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1447,13 +1445,13 @@ __attribute__((swift_name("Ktor_ioByteReadChannel")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)readAvailableDst:(NexusKtor_ioChunkBuffer *)dst completionHandler:(void (^)(NexusInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:completionHandler:)")));
+- (int32_t)readAvailableMin:(int32_t)min block:(void (^)(NexusKtor_ioBuffer *))block __attribute__((swift_name("readAvailable(min:block:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)readAvailableDst:(NexusKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length completionHandler:(void (^)(NexusInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:offset:length:completionHandler:)")));
-- (int32_t)readAvailableMin:(int32_t)min block:(void (^)(NexusKtor_ioBuffer *))block __attribute__((swift_name("readAvailable(min:block:)")));
 
 /**
  * @note This method converts instances of CancellationException to errors.
@@ -1727,6 +1725,7 @@ __attribute__((swift_name("Koin_coreKind")))
 @property (class, readonly) NexusKoin_coreKind *factory __attribute__((swift_name("factory")));
 @property (class, readonly) NexusKoin_coreKind *scoped __attribute__((swift_name("scoped")));
 + (NexusKotlinArray<NexusKoin_coreKind *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<NexusKoin_coreKind *> *entries __attribute__((swift_name("entries")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -2098,8 +2097,8 @@ __attribute__((swift_name("Ktor_ioInput")))
  * @note This method has protected visibility in Kotlin source and is intended only for use by subclasses.
 */
 - (void)markNoMoreChunksAvailable __attribute__((swift_name("markNoMoreChunksAvailable()")));
-- (int64_t)peekToDestination:(NexusKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max __attribute__((swift_name("peekTo(destination:destinationOffset:offset:min:max:)")));
 - (int32_t)peekToBuffer:(NexusKtor_ioChunkBuffer *)buffer __attribute__((swift_name("peekTo(buffer:)")));
+- (int64_t)peekToDestination:(NexusKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max __attribute__((swift_name("peekTo(destination:destinationOffset:offset:min:max:)")));
 - (int8_t)readByte __attribute__((swift_name("readByte()")));
 - (NSString *)readTextMin:(int32_t)min max:(int32_t)max __attribute__((swift_name("readText(min:max:)")));
 - (int32_t)readTextOut:(id<NexusKotlinAppendable>)out min:(int32_t)min max:(int32_t)max __attribute__((swift_name("readText(out:min:max:)")));
