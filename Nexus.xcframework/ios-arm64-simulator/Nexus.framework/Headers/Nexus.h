@@ -229,6 +229,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KoinIosKt")))
 @interface NexusKoinIosKt : NexusBase
 + (void)doInitKoin __attribute__((swift_name("doInitKoin()")));
++ (void)doInitKoin2 __attribute__((swift_name("doInitKoin2()")));
 @property (class, readonly) NexusKoin_coreModule *platformModule __attribute__((swift_name("platformModule")));
 @end
 
