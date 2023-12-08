@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Nexus",
-            url: "https://github.com/alexis-burgos/xcode-spm-test/Nexus-unspecified.zip",
-            checksum: "f90317872adfc83ca7fe5f76a65897f622db0a967b5b496197d8a0fb1f4c2335"
+            url: ""https://github.com/alexis-burgos/xcode-spm-test"/releases/download/0.0.1-SNAPSHOT/Nexus-unspecified.zip",
+            checksum: "ed84eab019f1e36edbf145ff06cd6c766cddcc3e7bca72a6854d4764cc5cf531"
         ),
     ]
 )
