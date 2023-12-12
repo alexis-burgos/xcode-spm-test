@@ -1,0 +1,6 @@
+framework module Nexus {
+    umbrella header "Nexus.h"
+
+    export *
+    module * { export * }
+}
