@@ -8,7 +8,7 @@
 
 @class NexusKoin_coreKoin, NexusNexusClient, NexusKoin_coreModule, NexusKoin_coreScope, NexusKoin_coreParametersHolder, NexusKotlinLazyThreadSafetyMode, NexusKoin_coreLogger, NexusKoin_coreExtensionManager, NexusKoin_coreInstanceRegistry, NexusKoin_corePropertyRegistry, NexusKoin_coreScopeRegistry, NexusKoin_coreKoinDefinition<R>, NexusKotlinArray<T>, NexusKoin_coreInstanceFactory<T>, NexusKoin_coreSingleInstanceFactory<T>, NexusKoin_coreScopeDSL, NexusKoin_coreLockable, NexusStately_concurrencyThreadLocalRef<T>, NexusKotlinEnumCompanion, NexusKotlinEnum<E>, NexusKoin_coreLevel, NexusKoin_coreScopeRegistryCompanion, NexusKoin_coreBeanDefinition<T>, NexusKoin_coreInstanceFactoryCompanion, NexusKoin_coreInstanceContext, NexusKoin_coreKind, NexusKoin_coreCallbacks<T>;
 
-@protocol NexusKoin_coreKoinComponent, NexusKoin_coreKoinScopeComponent, NexusKoin_coreQualifier, NexusKotlinKClass, NexusKotlinLazy, NexusKoin_coreScopeCallback, NexusKotlinKDeclarationContainer, NexusKotlinKAnnotatedElement, NexusKotlinKClassifier, NexusKotlinComparable, NexusKoin_coreKoinExtension, NexusKotlinIterator;
+@protocol NexusPlatform, NexusKoin_coreKoinComponent, NexusKoin_coreKoinScopeComponent, NexusKoin_coreQualifier, NexusKotlinKClass, NexusKotlinLazy, NexusKoin_coreScopeCallback, NexusKotlinKDeclarationContainer, NexusKotlinKAnnotatedElement, NexusKotlinKClassifier, NexusKotlinComparable, NexusKoin_coreKoinExtension, NexusKotlinIterator;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -144,11 +144,25 @@ __attribute__((swift_name("KotlinBoolean")))
 + (instancetype)numberWithBool:(BOOL)value;
 @end
 
+__attribute__((swift_name("Platform")))
+@protocol NexusPlatform
+@required
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("IosPlatform")))
+@interface NexusIosPlatform : NexusBase <NexusPlatform>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("NexusClient")))
 @interface NexusNexusClient : NexusBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithPlatform:(id<NexusPlatform>)platform __attribute__((swift_name("init(platform:)"))) __attribute__((objc_designated_initializer));
+@property (readonly) id<NexusPlatform> platform __attribute__((swift_name("platform")));
 @end
 
 __attribute__((swift_name("Koin_coreKoinComponent")))
