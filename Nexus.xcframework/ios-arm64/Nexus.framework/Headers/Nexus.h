@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class NexusKoin_coreKoin, NexusNexusClient, NexusKoin_coreModule, NexusKoin_coreScope, NexusKoin_coreParametersHolder, NexusKotlinLazyThreadSafetyMode, NexusKoin_coreLogger, NexusKoin_coreExtensionManager, NexusKoin_coreInstanceRegistry, NexusKoin_corePropertyRegistry, NexusKoin_coreScopeRegistry, NexusKoin_coreKoinDefinition<R>, NexusKotlinArray<T>, NexusKoin_coreInstanceFactory<T>, NexusKoin_coreSingleInstanceFactory<T>, NexusKoin_coreScopeDSL, NexusKoin_coreLockable, NexusStately_concurrencyThreadLocalRef<T>, NexusKotlinEnumCompanion, NexusKotlinEnum<E>, NexusKoin_coreLevel, NexusKoin_coreScopeRegistryCompanion, NexusKoin_coreBeanDefinition<T>, NexusKoin_coreInstanceFactoryCompanion, NexusKoin_coreInstanceContext, NexusKoin_coreKind, NexusKoin_coreCallbacks<T>;
+@class NexusKoin_coreKoin, NexusNexusClient, NexusKoin_coreModule, NexusKotlinThrowable, NexusKotlinArray<T>, NexusKotlinException, NexusKotlinRuntimeException, NexusKotlinIllegalStateException, NexusKoin_coreScope, NexusKoin_coreParametersHolder, NexusKotlinLazyThreadSafetyMode, NexusKoin_coreLogger, NexusKoin_coreExtensionManager, NexusKoin_coreInstanceRegistry, NexusKoin_corePropertyRegistry, NexusKoin_coreScopeRegistry, NexusKoin_coreKoinDefinition<R>, NexusKoin_coreInstanceFactory<T>, NexusKoin_coreSingleInstanceFactory<T>, NexusKoin_coreScopeDSL, NexusKoin_coreLockable, NexusStately_concurrencyThreadLocalRef<T>, NexusKotlinEnumCompanion, NexusKotlinEnum<E>, NexusKoin_coreLevel, NexusKoin_coreScopeRegistryCompanion, NexusKoin_coreBeanDefinition<T>, NexusKoin_coreInstanceFactoryCompanion, NexusKoin_coreInstanceContext, NexusKoin_coreKind, NexusKoin_coreCallbacks<T>;
 
-@protocol NexusPlatform, NexusKoin_coreKoinComponent, NexusKoin_coreKoinScopeComponent, NexusKoin_coreQualifier, NexusKotlinKClass, NexusKotlinLazy, NexusKoin_coreScopeCallback, NexusKotlinKDeclarationContainer, NexusKotlinKAnnotatedElement, NexusKotlinKClassifier, NexusKotlinComparable, NexusKoin_coreKoinExtension, NexusKotlinIterator;
+@protocol NexusPlatform, NexusKotlinx_coroutines_coreMutableSharedFlow, NexusKoin_coreKoinComponent, NexusKotlinx_coroutines_coreStateFlow, NexusKotlinx_coroutines_coreFlowCollector, NexusKotlinx_coroutines_coreFlow, NexusKotlinx_coroutines_coreSharedFlow, NexusKoin_coreKoinScopeComponent, NexusKoin_coreQualifier, NexusKotlinKClass, NexusKotlinLazy, NexusKotlinIterator, NexusKoin_coreScopeCallback, NexusKotlinKDeclarationContainer, NexusKotlinKAnnotatedElement, NexusKotlinKClassifier, NexusKotlinComparable, NexusKoin_coreKoinExtension;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -162,7 +162,14 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("NexusClient")))
 @interface NexusNexusClient : NexusBase
 - (instancetype)initWithPlatform:(id<NexusPlatform>)platform __attribute__((swift_name("init(platform:)"))) __attribute__((objc_designated_initializer));
-@property (readonly) id<NexusPlatform> platform __attribute__((swift_name("platform")));
+- (void)forceCrash __attribute__((swift_name("forceCrash()")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)messageToLoopMessage:(NSString *)message loopTime:(int32_t)loopTime completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("messageToLoop(message:loopTime:completionHandler:)")));
+@property (readonly) id<NexusKotlinx_coroutines_coreMutableSharedFlow> messageFlow __attribute__((swift_name("messageFlow")));
 @end
 
 __attribute__((swift_name("Koin_coreKoinComponent")))
@@ -191,6 +198,108 @@ __attribute__((swift_name("KoinIosKt")))
 @interface NexusKoinIosKt : NexusBase
 + (void)doInitKoin __attribute__((swift_name("doInitKoin()")));
 @property (class, readonly) NexusKoin_coreModule *platformModule __attribute__((swift_name("platformModule")));
+@end
+
+__attribute__((swift_name("KotlinThrowable")))
+@interface NexusKotlinThrowable : NexusBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+
+/**
+ * @note annotations
+ *   kotlin.experimental.ExperimentalNativeApi
+*/
+- (NexusKotlinArray<NSString *> *)getStackTrace __attribute__((swift_name("getStackTrace()")));
+- (void)printStackTrace __attribute__((swift_name("printStackTrace()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NexusKotlinThrowable * _Nullable cause __attribute__((swift_name("cause")));
+@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+- (NSError *)asError __attribute__((swift_name("asError()")));
+@end
+
+__attribute__((swift_name("KotlinException")))
+@interface NexusKotlinException : NexusKotlinThrowable
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((swift_name("KotlinRuntimeException")))
+@interface NexusKotlinRuntimeException : NexusKotlinException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((swift_name("KotlinIllegalStateException")))
+@interface NexusKotlinIllegalStateException : NexusKotlinRuntimeException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlin.SinceKotlin(version="1.4")
+*/
+__attribute__((swift_name("KotlinCancellationException")))
+@interface NexusKotlinCancellationException : NexusKotlinIllegalStateException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(NexusKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
+@protocol NexusKotlinx_coroutines_coreFlow
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)collectCollector:(id<NexusKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSharedFlow")))
+@protocol NexusKotlinx_coroutines_coreSharedFlow <NexusKotlinx_coroutines_coreFlow>
+@required
+@property (readonly) NSArray<id> *replayCache __attribute__((swift_name("replayCache")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
+@protocol NexusKotlinx_coroutines_coreFlowCollector
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreMutableSharedFlow")))
+@protocol NexusKotlinx_coroutines_coreMutableSharedFlow <NexusKotlinx_coroutines_coreSharedFlow, NexusKotlinx_coroutines_coreFlowCollector>
+@required
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.ExperimentalCoroutinesApi
+*/
+- (void)resetReplayCache __attribute__((swift_name("resetReplayCache()")));
+- (BOOL)tryEmitValue:(id _Nullable)value __attribute__((swift_name("tryEmit(value:)")));
+@property (readonly) id<NexusKotlinx_coroutines_coreStateFlow> subscriptionCount __attribute__((swift_name("subscriptionCount")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -253,6 +362,24 @@ __attribute__((swift_name("Koin_coreModule")))
 @property (readonly) NSMutableArray<NexusKoin_coreModule *> *includedModules __attribute__((swift_name("includedModules")));
 @property (readonly) BOOL isLoaded __attribute__((swift_name("isLoaded")));
 @property (readonly) NexusMutableDictionary<NSString *, NexusKoin_coreInstanceFactory<id> *> *mappings __attribute__((swift_name("mappings")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinArray")))
+@interface NexusKotlinArray<T> : NexusBase
++ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(NexusInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (id<NexusKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreStateFlow")))
+@protocol NexusKotlinx_coroutines_coreStateFlow <NexusKotlinx_coroutines_coreSharedFlow>
+@required
+@property (readonly) id _Nullable value __attribute__((swift_name("value")));
 @end
 
 __attribute__((swift_name("Koin_coreLockable")))
@@ -472,18 +599,6 @@ __attribute__((swift_name("Koin_coreKoinDefinition")))
 @property (readonly) NexusKoin_coreModule *module __attribute__((swift_name("module")));
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinArray")))
-@interface NexusKotlinArray<T> : NexusBase
-+ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(NexusInt *))init __attribute__((swift_name("init(size:init:)")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
-- (id<NexusKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
-@end
-
 __attribute__((swift_name("Koin_coreInstanceFactory")))
 @interface NexusKoin_coreInstanceFactory<T> : NexusKoin_coreLockable
 - (instancetype)initWithBeanDefinition:(NexusKoin_coreBeanDefinition<T> *)beanDefinition __attribute__((swift_name("init(beanDefinition:)"))) __attribute__((objc_designated_initializer));
@@ -519,6 +634,13 @@ __attribute__((swift_name("Koin_coreScopeDSL")))
 - (NexusKoin_coreKoinDefinition<id> *)scopedQualifier:(id<NexusKoin_coreQualifier> _Nullable)qualifier definition:(id _Nullable (^)(NexusKoin_coreScope *, NexusKoin_coreParametersHolder *))definition __attribute__((swift_name("scoped(qualifier:definition:)")));
 @property (readonly) NexusKoin_coreModule *module __attribute__((swift_name("module")));
 @property (readonly) id<NexusKoin_coreQualifier> scopeQualifier __attribute__((swift_name("scopeQualifier")));
+@end
+
+__attribute__((swift_name("KotlinIterator")))
+@protocol NexusKotlinIterator
+@required
+- (BOOL)hasNext __attribute__((swift_name("hasNext()")));
+- (id _Nullable)next __attribute__((swift_name("next()")));
 @end
 
 __attribute__((swift_name("Koin_coreScopeCallback")))
@@ -574,13 +696,6 @@ __attribute__((swift_name("Koin_coreScopeRegistry.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) NexusKoin_coreScopeRegistryCompanion *shared __attribute__((swift_name("shared")));
-@end
-
-__attribute__((swift_name("KotlinIterator")))
-@protocol NexusKotlinIterator
-@required
-- (BOOL)hasNext __attribute__((swift_name("hasNext()")));
-- (id _Nullable)next __attribute__((swift_name("next()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
