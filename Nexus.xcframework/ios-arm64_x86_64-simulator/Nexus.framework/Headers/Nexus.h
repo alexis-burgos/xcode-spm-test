@@ -170,6 +170,7 @@ __attribute__((swift_name("NexusClient")))
 */
 - (void)messageToLoopMessage:(NSString *)message loopTime:(int32_t)loopTime completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("messageToLoop(message:loopTime:completionHandler:)")));
 @property (readonly) id<NexusKotlinx_coroutines_coreMutableSharedFlow> messageFlow __attribute__((swift_name("messageFlow")));
+@property (readonly) id<NexusPlatform> platform __attribute__((swift_name("platform")));
 @end
 
 __attribute__((swift_name("Koin_coreKoinComponent")))
